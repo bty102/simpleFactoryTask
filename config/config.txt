@@ -1,0 +1,2 @@
+TEXT_FILE
+D:\hoctap\DesignPattern\tasks\simpleFactoryTask\textFiles\sinhvien.txt
