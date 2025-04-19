@@ -1,2 +1,2 @@
-TEXT_FILE
-D:\hoctap\DesignPattern\tasks\simpleFactoryTask\textFiles\sinhvien.txt
+MS_SQLSERVER
+jdbc:sqlserver://BTYLAP:1433;encrypt=true;databaseName=simpleFactoryTaskDB;username=sa;password=123;trustServerCertificate=true;

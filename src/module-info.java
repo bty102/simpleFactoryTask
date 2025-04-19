@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module simpleFactoryTask {
-	requires lombok;
-}

@@ -10,6 +10,7 @@ import java.util.Scanner;
 import _22T1020329.config.Configuration;
 import _22T1020329.config.NgaySinhFormat;
 import _22T1020329.entity.SinhVien;
+import _22T1020329.factory.DBSinhVienRepoFactory;
 import _22T1020329.factory.SinhVienRepoFactory;
 import _22T1020329.factory.TextSinhVienRepoFactory;
 import _22T1020329.repository.SinhVienRepo;
@@ -23,7 +24,7 @@ public class ChuongTrinh {
 		if(configuration.getLoaiNguon().equals("TEXT_FILE")) {
 			sinhVienRepoFactory = new TextSinhVienRepoFactory(configuration.getChuoiKetNoi());
 		} else if(configuration.getLoaiNguon().equals("MS_SQLSERVER")) {
-			
+			sinhVienRepoFactory = new DBSinhVienRepoFactory(configuration.getChuoiKetNoi());
 		}
 		sinhVienRepo = sinhVienRepoFactory.getSinhVienRepo();
 		Scanner sc = new Scanner(System.in);
